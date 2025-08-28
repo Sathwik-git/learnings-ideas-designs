@@ -13,7 +13,6 @@ function doSomething(keyPressed: Direction) {
 doSomething(Direction.Up);
 
 //Generics
-
 type Input = string | number;
 
 function gen(input: Input[]) {
@@ -23,10 +22,10 @@ function gen(input: Input[]) {
 // const value = gen([2,"nani",1])
 // console.log(value.toUpperCase())  issue
 
-function gene<T>(arg:T[]){
-return arg[0];
+function gene<T>(arg: T[]) {
+  return arg[0];
 }
 
-const value = gene<string>(["sathwik"])
-const value1 = gene<number>([1,2,3])
-console.log(value,value1)
+const value = gene<string>(["sathwik"]);
+const value1 = gene<number>([1, 2, 3]);
+console.log(value, value1);
